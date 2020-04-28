@@ -28,10 +28,11 @@
     "prepublishOnly": "npm run test"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/sourcefuse/loopback4-s3"
   },
-  "author": "",
-  "license": "",
+  "author": "Sourcefuse",
+  "license": "MIT",
   "files": [
     "README.md",
     "index.js",
@@ -61,5 +62,8 @@
     "eslint-plugin-mocha": "^6.2.2",
     "source-map-support": "^0.5.16",
     "typescript": "~3.5.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
