@@ -49,7 +49,7 @@
     "moment-timezone": "^0.5.27"
   },
   "devDependencies": {
-    "@loopback/build": "~2.1.0",
+    "@loopback/build": "^5.2.0",
     "@loopback/eslint-config": "^3.0.0",
     "@loopback/testlab": "^1.10.3",
     "@types/moment-timezone": "^0.5.12",
