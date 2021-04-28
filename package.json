@@ -42,7 +42,7 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@loopback/boot": "^3.3.0",
+    "@loopback/boot": "^3.3.1",
     "@loopback/context": "^3.15.0",
     "@loopback/core": "^2.15.0",
     "aws-sdk": "^2.870.0",
