@@ -21,6 +21,7 @@ this.bind(AWSS3Bindings.Config).to({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   region: process.env.AWS_REGION,
+  signatureVersion: process.env.AWS_SIGNATURE,
 } as AwsS3Config);
 this.component(AwsS3Component);
 ```
