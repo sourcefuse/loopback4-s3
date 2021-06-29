@@ -7,7 +7,7 @@ export class AwsS3Provider implements Provider<AWS.S3> {
     @inject(AWSS3Bindings.Config)
     private readonly config: AwsS3Config,
   ) {
-    AWS.config.update(Object.assign({}, {signatureVersion: 'v4'}, this.config));
+    AWS.config.update(Object.assign({}, {signatureVersion: this.config.signatureVersion}, this.config));
   }
   value() {
     return new AWS.S3();

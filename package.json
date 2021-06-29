@@ -45,7 +45,7 @@
     "@loopback/boot": "^3.4.0",
     "@loopback/context": "^3.16.0",
     "@loopback/core": "^2.16.0",
-    "aws-sdk": "^2.901.0",
+    "aws-sdk": "^2.910.0",
     "moment-timezone": "^0.5.33"
   },
   "devDependencies": {
@@ -53,12 +53,12 @@
     "@loopback/eslint-config": "^10.2.0",
     "@loopback/testlab": "^3.4.0",
     "@types/moment-timezone": "^0.5.12",
-    "@types/node": "^10.17.59",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "eslint": "^7.25.0",
+    "@types/node": "^10.17.60",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-eslint-plugin": "^3.0.2",
+    "eslint-plugin-eslint-plugin": "^3.0.3",
     "eslint-plugin-mocha": "^8.1.0",
     "source-map-support": "^0.5.19",
     "typescript": "~4.2.4"

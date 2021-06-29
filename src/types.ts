@@ -8,4 +8,5 @@ export namespace AWSS3Bindings {
 export interface AwsS3Config {
   accessKeyId: string;
   secretAccessKey: string;
+  signatureVersion: string;
 }
