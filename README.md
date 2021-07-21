@@ -29,7 +29,7 @@ this.component(AwsS3Component);
 - After this, you can just inject the S3 provider across application.
 
 ```ts
-import * as AWS from '@aws-sdk/client-s3';
+import * as AWS from 'aws-sdk';
 
 @inject(AWSS3Bindings.AwsS3Provider) s3: AWS.S3,
 ```
