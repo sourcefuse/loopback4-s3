@@ -45,6 +45,10 @@ If you think this extension is useful, please [star](https://help.github.com/en/
 
 Please read [CONTRIBUTING.md](https://github.com/sourcefuse/loopback4-s3/blob/master/.github/CONTRIBUTING.md) for details on the process for submitting pull requests to us.
 
+## Developing
+
+For development guidelines, refer [here](https://github.com/sourcefuse/rakuten-pms-api/tree/master/DEVELOPING.md)
+
 ## Code of conduct
 
 Code of conduct guidelines [here](https://github.com/sourcefuse/loopback4-s3/blob/master/.github/CODE_OF_CONDUCT.md).
