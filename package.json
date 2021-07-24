@@ -1,6 +1,6 @@
 {
   "name": "loopback4-s3",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "A loopback-next extension for AWS S3 integration",
   "keywords": [
     "loopback-extension",
@@ -26,7 +26,7 @@
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "prepublishOnly": "npm run test",
-    "release": "semantic-release --no-ci"
+    "release": "HUSKY_SKIP_HOOKS=1 semantic-release --no-ci"
   },
   "repository": {
     "type": "git",
@@ -92,6 +92,14 @@
   "release": {
     "branches": [
       "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/changelog",
+      "@semantic-release/git"
     ],
     "repositoryUrl": "git@github.com:sourcefuse/loopback4-s3.git"
   }
