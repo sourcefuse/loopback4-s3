@@ -10,7 +10,7 @@ export class AwsS3Provider implements Provider<AWS.S3> {
     AWS.config.update(
       Object.assign(
         {},
-        {signatureVersion: this.config.signatureVersion},
+        {signatureVersion: this.config.signatureVersion ?? 'v4'},
         this.config,
       ),
     );
