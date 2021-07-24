@@ -1,6 +1,6 @@
 {
   "name": "loopback4-s3",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A loopback-next extension for AWS S3 integration",
   "keywords": [
     "loopback-extension",
@@ -21,11 +21,12 @@
     "prettier:fix": "npm run prettier:cli -- --write",
     "eslint": "lb-eslint --report-unused-disable-directives .",
     "eslint:fix": "npm run eslint -- --fix",
-    "pretest": "npm run clean && npm run build",
+    "pretest": "npm run build",
     "test": "echo \"No test specified\"",
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run test",
+    "release": "semantic-release --no-ci"
   },
   "repository": {
     "type": "git",
@@ -49,6 +50,8 @@
     "moment-timezone": "^0.5.33"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@loopback/build": "^6.4.0",
     "@loopback/eslint-config": "^10.2.0",
     "@loopback/testlab": "^3.4.0",
@@ -56,14 +59,38 @@
     "@types/node": "^10.17.60",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0",
+    "cz-customizable-ghooks": "^2.0.0",
     "eslint": "^7.26.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-eslint-plugin": "^3.0.3",
     "eslint-plugin-mocha": "^8.1.0",
+    "husky": "^4.3.0",
+    "semantic-release": "^17.4.4",
     "source-map-support": "^0.5.19",
     "typescript": "~4.2.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "repositoryUrl": "git@github.com:sourcefuse/loopback4-s3.git"
   }
 }
