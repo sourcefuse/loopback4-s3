@@ -1,6 +1,6 @@
 {
   "name": "loopback4-s3",
-  "version": "2.2.5",
+  "version": "3.0.0",
   "description": "A loopback-next extension for AWS S3 integration",
   "keywords": [
     "loopback-extension",
