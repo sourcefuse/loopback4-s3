@@ -27,6 +27,7 @@
     "posttest": "npm run lint",
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "prepublishOnly": "npm run test",
+    "prepare": "husky install",
     "release": "HUSKY_SKIP_HOOKS=1 semantic-release --no-ci"
   },
   "repository": {
@@ -44,47 +45,41 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@loopback/boot": "^3.4.0",
-    "@loopback/context": "^3.16.0",
-    "@loopback/core": "^2.16.0",
-    "aws-sdk": "^2.910.0",
-    "moment-timezone": "^0.5.33",
-    "nyc": "^15.1.0"
+    "@loopback/boot": "^3.4.4",
+    "@loopback/context": "^3.18.0",
+    "@loopback/core": "^2.18.0",
+    "aws-sdk": "^2.1028.0",
+    "moment-timezone": "^0.5.34"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@loopback/build": "^6.4.0",
-    "@loopback/eslint-config": "^10.2.0",
-    "@loopback/testlab": "^3.4.0",
+    "@loopback/build": "^7.0.2",
+    "@loopback/eslint-config": "^11.0.2",
+    "@loopback/testlab": "^3.4.4",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@types/moment-timezone": "^0.5.12",
     "@types/node": "^10.17.60",
-    "@typescript-eslint/eslint-plugin": "^4.24.0",
-    "@typescript-eslint/parser": "^4.24.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",
     "cz-customizable-ghooks": "^2.0.0",
-    "eslint": "^7.26.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-eslint-plugin": "^3.0.3",
-    "eslint-plugin-mocha": "^8.1.0",
-    "husky": "^4.3.0",
+    "eslint-plugin-eslint-plugin": "^3.6.1",
+    "eslint-plugin-mocha": "^9.0.0",
+    "fs-extra": "^10.0.0",
+    "husky": "^7.0.4",
+    "nyc": "^15.1.0",
     "semantic-release": "^17.4.4",
-    "source-map-support": "^0.5.19",
-    "typescript": "~4.2.4"
+    "source-map-support": "^0.5.20",
+    "typescript": "~4.4.4"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "config": {
     "commitizen": {
