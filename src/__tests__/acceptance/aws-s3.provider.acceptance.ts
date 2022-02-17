@@ -1,8 +1,9 @@
-import {S3} from '@aws-sdk/client-s3';
+import {PutObjectCommand} from '@aws-sdk/client-s3';
 import {expect} from '@loopback/testlab';
 import {AwsS3Provider} from '../../providers';
 import * as dotenv from 'dotenv';
 import {randomBytes} from 'crypto';
+import {S3WithSigner} from '../..';
 
 dotenv.config();
 const accessKey = process.env.AWS_ACCESS_KEY;
@@ -11,8 +12,8 @@ const region = process.env.AWS_REGION;
 const testBucket = process.env.AWS_TEST_BUCKET ?? 'loopback4-test-bucket';
 describe('AWS S3 Acceptance Tests', function () {
   // eslint-disable-next-line @typescript-eslint/no-invalid-this
-  this.timeout(10000);
-  let client: S3;
+  this.timeout(20000);
+  let client: S3WithSigner;
   before(function () {
     if (!accessKey || !secretKey || !region) {
       // eslint-disable-next-line @typescript-eslint/no-invalid-this
@@ -55,6 +56,23 @@ describe('AWS S3 Acceptance Tests', function () {
       });
       const {Contents} = await client.listObjects({Bucket: testBucket});
       expect(Contents).to.have.length(1);
+    });
+
+    it('should create a signed url for an object', async () => {
+      const Key = randomBytes(48).toString('hex');
+      const Body = randomBytes(128).toString('hex');
+
+      const command = new PutObjectCommand({
+        Bucket: testBucket,
+        Key,
+        Body,
+      });
+
+      const signedUrl = await client.getSignedUrl(command, {
+        expiresIn: 1000,
+      });
+
+      expect(signedUrl).to.be.a.String();
     });
   });
 
