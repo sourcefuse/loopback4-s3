@@ -1,6 +1,6 @@
 import {Component, ProviderMap} from '@loopback/core';
 import {AWSS3Bindings} from './types';
-import {AwsS3Provider} from './providers/aws-s3.provider';
+import {AwsS3Provider} from './providers';
 
 export class AwsS3Component implements Component {
   constructor() {
