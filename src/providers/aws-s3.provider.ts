@@ -1,21 +1,19 @@
 import {Provider, inject} from '@loopback/core';
-import * as AWS from 'aws-sdk';
 import {AwsS3Config, AWSS3Bindings} from '../types';
+import {S3WithSigner} from '..';
 
-export class AwsS3Provider implements Provider<AWS.S3> {
+export class AwsS3Provider implements Provider<S3WithSigner> {
   constructor(
     @inject(AWSS3Bindings.Config)
     private readonly config: AwsS3Config,
-  ) {
-    AWS.config.update(
-      Object.assign(
-        {},
-        {signatureVersion: this.config.signatureVersion ?? 'v4'},
-        this.config,
-      ),
-    );
-  }
-  value() {
-    return new AWS.S3();
+  ) {}
+  value(): S3WithSigner {
+    return new S3WithSigner({
+      credentials: {
+        accessKeyId: this.config.accessKeyId,
+        secretAccessKey: this.config.secretAccessKey,
+      },
+      region: this.config.region,
+    });
   }
 }

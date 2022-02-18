@@ -34,6 +34,14 @@ import * as AWS from 'aws-sdk';
 @inject(AWSS3Bindings.AwsS3Provider) s3: AWS.S3,
 ```
 
+## Migration to a version after 4.0.0
+
+`loopback4-s3@4.0.0` is the last version that would be using aws-sdk v2, after that all the versions are going to be based on [`aws-sdk v3`](https://github.com/aws/aws-sdk-js-v3).
+
+You can follow [this](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/migrating-to-v3.html) guide to migrate your code to `aws-sdk-js-v3`.
+
+The `getPresignedUrl` method is also missing in `aws-sdk/client-s3` client, so it is provided in the extended client returned by the provider. The documentation for this new `getPresignedUrl` are provided [here](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_s3_request_presigner.html)
+
 ## Feedback
 
 If you've noticed a bug or have a question or have a feature request, [search the issue tracker](https://github.com/sourcefuse/loopback4-s3/issues) to see if someone else in the community has already created a ticket.
