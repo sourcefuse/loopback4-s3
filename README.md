@@ -21,7 +21,6 @@ this.bind(AWSS3Bindings.Config).to({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   region: process.env.AWS_REGION,
-  signatureVersion: process.env.AWS_SIGNATURE,
 } as AwsS3Config);
 this.component(AwsS3Component);
 ```
@@ -29,9 +28,9 @@ this.component(AwsS3Component);
 - After this, you can just inject the S3 provider across application.
 
 ```ts
-import * as AWS from 'aws-sdk';
+import {S3WithSigner} from 'loopback4-s3';
 
-@inject(AWSS3Bindings.AwsS3Provider) s3: AWS.S3,
+@inject(AWSS3Bindings.AwsS3Provider) s3: S3WithSigner,
 ```
 
 ## Migration to a version after 4.0.0
