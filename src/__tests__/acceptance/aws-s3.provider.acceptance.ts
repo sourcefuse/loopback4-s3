@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import {PutObjectCommand} from '@aws-sdk/client-s3';
 import {expect} from '@loopback/testlab';
-import {AwsS3Provider} from '../../providers';
-import * as dotenv from 'dotenv';
 import {randomBytes} from 'crypto';
+import * as dotenv from 'dotenv';
 import {S3WithSigner} from '../..';
+import {AwsS3Provider} from '../../providers';
 
 dotenv.config();
 const accessKey = process.env.AWS_ACCESS_KEY;
