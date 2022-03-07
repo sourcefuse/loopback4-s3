@@ -21,7 +21,6 @@ this.bind(AWSS3Bindings.Config).to({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   region: process.env.AWS_REGION,
-  signatureVersion: process.env.AWS_SIGNATURE,
 } as AwsS3Config);
 this.component(AwsS3Component);
 ```
@@ -29,16 +28,28 @@ this.component(AwsS3Component);
 - After this, you can just inject the S3 provider across application.
 
 ```ts
-import * as AWS from 'aws-sdk';
+import {S3WithSigner} from 'loopback4-s3';
 
-@inject(AWSS3Bindings.AwsS3Provider) s3: AWS.S3,
+@inject(AWSS3Bindings.AwsS3Provider) s3: S3WithSigner,
 ```
 
 ## Migration to a version after 4.0.0
 
 `loopback4-s3@4.0.0` is the last version that would be using aws-sdk v2, after that all the versions are going to be based on [`aws-sdk v3`](https://github.com/aws/aws-sdk-js-v3).
 
-You can follow [this](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/migrating-to-v3.html) guide to migrate your code to `aws-sdk-js-v3`.
+You should remove any previous installation of `aws-sdk` from your projects if you have it installed just for `loopback4-s3`.
+
+The client from v3 sdk no longer require the `.promise()` method to return a promise -
+
+```
+const data =  await v2client.command(params).promise() // in v2
+
+const data = await v3client.command(params) // v3
+```
+
+The client provided by the `loopback4-s3` package extends `S3` class and not `S3Client`, so you do not need to create commands to use this module.
+
+You can read [this](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/migrating-to-v3.html) guide to know more about migrating your code to `aws-sdk-js-v3`.
 
 The `getPresignedUrl` method is also missing in `aws-sdk/client-s3` client, so it is provided in the extended client returned by the provider. The documentation for this new `getPresignedUrl` are provided [here](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_s3_request_presigner.html)
 

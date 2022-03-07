@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-misused-promises */
 import {expect} from '@loopback/testlab';
 import {AwsS3Provider} from '../../providers/aws-s3.provider';
 
