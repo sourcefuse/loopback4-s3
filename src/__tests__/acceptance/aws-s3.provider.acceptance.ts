@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-misused-promises */
 import {PutObjectCommand} from '@aws-sdk/client-s3';
 import {expect} from '@loopback/testlab';
 import {randomBytes} from 'crypto';
