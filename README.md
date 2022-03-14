@@ -53,6 +53,8 @@ You can read [this](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-
 
 The `getPresignedUrl` method is also missing in `aws-sdk/client-s3` client, so it is provided in the extended client returned by the provider. The documentation for this new `getPresignedUrl` are provided [here](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_s3_request_presigner.html)
 
+You might also have to install `cmake 3.1+` on your machine if [`aws-crt`](https://www.npmjs.com/package/aws-crt) is not available as a prebuild package for your system.
+
 ## Feedback
 
 If you've noticed a bug or have a question or have a feature request, [search the issue tracker](https://github.com/sourcefuse/loopback4-s3/issues) to see if someone else in the community has already created a ticket.
