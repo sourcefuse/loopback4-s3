@@ -14,6 +14,7 @@ export class AwsS3Provider implements Provider<S3WithSigner> {
         secretAccessKey: this.config.secretAccessKey,
       },
       region: this.config.region,
+      ...this.config,
     });
   }
 }
