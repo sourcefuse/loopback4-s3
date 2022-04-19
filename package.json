@@ -62,7 +62,10 @@
     "@loopback/rest-explorer": "^4.1.2",
     "@loopback/testlab": "^4.1.2",
     "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/dotenv": "^8.2.0",
     "@types/moment-timezone": "^0.5.30",
     "@types/node": "^12.20.47",
@@ -112,10 +115,20 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      "@semantic-release/github",
       "@semantic-release/changelog",
-      "@semantic-release/git"
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "dist/",
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} semantic"
+        }
+      ],
+      "@semantic-release/github"
     ],
     "repositoryUrl": "git@github.com:sourcefuse/loopback4-s3.git"
   }
