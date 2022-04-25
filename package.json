@@ -1,6 +1,6 @@
 {
   "name": "loopback4-s3",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "A loopback-next extension for AWS S3 integration",
   "keywords": [
     "loopback-extension",
@@ -119,18 +119,16 @@
       [
         "semantic-release-slack-bot",
         {
-
-        "notifyOnSuccess": false,
-        "notifyOnFail": false,
-        "slackWebhook": "https://hooks.slack.com/services/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",
-        "branchesConfig": [
-
-          {
-            "pattern": "master",
-            "notifyOnSuccess": true,
-            "notifyOnFail": true
-          }
-        ]
+          "notifyOnSuccess": false,
+          "notifyOnFail": false,
+          "slackWebhook": "https://hooks.slack.com/services/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",
+          "branchesConfig": [
+            {
+              "pattern": "master",
+              "notifyOnSuccess": true,
+              "notifyOnFail": true
+            }
+          ]
         }
       ],
       "@semantic-release/changelog",
