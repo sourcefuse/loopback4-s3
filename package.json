@@ -97,6 +97,9 @@
       "path": "./node_modules/cz-customizable"
     }
   },
+  "np": {
+    "anyBranch": true
+  },
   "release": {
     "branches": [
       "master"
