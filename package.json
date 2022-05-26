@@ -83,7 +83,6 @@
     "husky": "^7.0.4",
     "nyc": "^15.1.0",
     "semantic-release": "^19.0.2",
-    "semantic-release-slack-bot": "^3.5.2",
     "source-map-support": "^0.5.21",
     "typescript": "~4.6.4"
   },
@@ -108,21 +107,6 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      [
-        "semantic-release-slack-bot",
-        {
-          "notifyOnSuccess": false,
-          "notifyOnFail": false,
-          "slackWebhook": "https://hooks.slack.com/services/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",
-          "branchesConfig": [
-            {
-              "pattern": "master",
-              "notifyOnSuccess": true,
-              "notifyOnFail": true
-            }
-          ]
-        }
-      ],
       "@semantic-release/changelog",
       "@semantic-release/npm",
       [
