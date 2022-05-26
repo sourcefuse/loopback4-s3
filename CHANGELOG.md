@@ -1,3 +1,11 @@
+## [5.1.2](https://github.com/sourcefuse/loopback4-s3/compare/v5.1.1...v5.1.2) (2022-05-26)
+
+
+### Bug Fixes
+
+* **ci-cd:** changes related to semantic ([#59](https://github.com/sourcefuse/loopback4-s3/issues/59)) ([7059d4d](https://github.com/sourcefuse/loopback4-s3/commit/7059d4d8844fbc68b907fd5e4eff6629bb3a2b0d)), closes [#58](https://github.com/sourcefuse/loopback4-s3/issues/58)
+* **ci-cd:** remove dist as a part of semantic ([#57](https://github.com/sourcefuse/loopback4-s3/issues/57)) ([d93d81b](https://github.com/sourcefuse/loopback4-s3/commit/d93d81b58161892a5ba17fec3917a364c1e314bc)), closes [#56](https://github.com/sourcefuse/loopback4-s3/issues/56)
+
 ## [5.1.1](https://github.com/sourcefuse/loopback4-s3/compare/v5.1.0...v5.1.1) (2022-04-25)
 
 
