@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/sourcefuse/loopback4-s3/compare/v5.1.2...v6.0.0) (2022-06-02)
+
+
+### Bug Fixes
+
+* **provider:** support all commands for getSignedUrl ([#61](https://github.com/sourcefuse/loopback4-s3/issues/61)) ([47f50ce](https://github.com/sourcefuse/loopback4-s3/commit/47f50ce14c54f02c9b48ac17bd4af3a5330fd268)), closes [#60](https://github.com/sourcefuse/loopback4-s3/issues/60)
+
+
+### BREAKING CHANGES
+
+* **provider:** Changed type of getSignedUrl method
+
 ## [5.1.2](https://github.com/sourcefuse/loopback4-s3/compare/v5.1.1...v5.1.2) (2022-05-26)
 
 
