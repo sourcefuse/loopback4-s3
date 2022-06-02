@@ -1,6 +1,7 @@
-import {PutObjectCommand, S3} from '@aws-sdk/client-s3';
+import {S3, ServiceInputTypes} from '@aws-sdk/client-s3';
 import {getSignedUrl} from '@aws-sdk/s3-request-presigner';
-import {RequestPresigningArguments} from '@aws-sdk/types';
+import {Command} from '@aws-sdk/smithy-client';
+import {MetadataBearer, RequestPresigningArguments} from '@aws-sdk/types';
 import {BindingKey} from '@loopback/core';
 
 export namespace AWSS3Bindings {
@@ -15,7 +16,20 @@ export interface AwsS3Config {
 }
 
 export class S3WithSigner extends S3 {
-  getSignedUrl(command: PutObjectCommand, options: RequestPresigningArguments) {
+  getSignedUrl<
+    InputType extends ServiceInputTypes,
+    OutputType extends MetadataBearer = MetadataBearer,
+  >(
+    command: Command<
+      InputType,
+      OutputType,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      any,
+      ServiceInputTypes,
+      MetadataBearer
+    >,
+    options?: RequestPresigningArguments,
+  ): Promise<string> {
     return getSignedUrl(this, command, options);
   }
 }
