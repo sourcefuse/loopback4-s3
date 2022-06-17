@@ -1,6 +1,6 @@
 {
   "name": "loopback4-s3",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "A loopback-next extension for AWS S3 integration",
   "keywords": [
     "loopback-extension",
@@ -107,12 +107,19 @@
       "master"
     ],
     "plugins": [
-      ["@semantic-release/commit-analyzer", {
-        "preset":"angular",
-        "releaseRules" : [
-          {"type": "chore", "scope":"deps","release":"patch"}
-        ]
-      }],
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "angular",
+          "releaseRules": [
+            {
+              "type": "chore",
+              "scope": "deps",
+              "release": "patch"
+            }
+          ]
+        }
+      ],
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
       "@semantic-release/npm",
