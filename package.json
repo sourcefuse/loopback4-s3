@@ -46,7 +46,7 @@
   ],
   "dependencies": {
     "@aws-sdk/client-s3": "^3.58.0",
-    "@aws-sdk/s3-request-presigner": "^3.58.0",
+    "@aws-sdk/s3-request-presigner": "^3.110.0",
     "@aws-sdk/smithy-client": "^3.99.0",
     "@aws-sdk/types": "^3.78.0",
     "@loopback/boot": "^5.0.1",
