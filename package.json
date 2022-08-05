@@ -51,7 +51,7 @@
     "@aws-sdk/types": "^3.78.0",
     "@loopback/boot": "^5.0.1",
     "@loopback/context": "^5.0.1",
-    "@loopback/core": "^4.0.1",
+    "@loopback/core": "^4.0.2",
     "moment-timezone": "^0.5.34"
   },
   "devDependencies": {
