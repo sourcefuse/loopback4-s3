@@ -12,7 +12,7 @@ npm install loopback4-s3
 
 ## Usage
 
-In order to use this component into your LoopBack application, please follow below steps.
+In order to use this component into your LoopBack application, please follow below steps. some change
 
 - Add component to application and provide access keys and other s3 initialization configuration details via AWSS3Bindings.Config binding as mentioned below. You can add any of the options mentioned [here](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html#constructor-property).
 
