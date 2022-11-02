@@ -1,3 +1,5 @@
+## [6.0.4](https://github.com/sourcefuse/loopback4-s3/compare/v6.0.3...v6.0.4) (2022-11-02)
+
 ## [6.0.3](https://github.com/sourcefuse/loopback4-s3/compare/v6.0.2...v6.0.3) (2022-09-09)
 
 ## [6.0.2](https://github.com/sourcefuse/loopback4-s3/compare/v6.0.1...v6.0.2) (2022-07-11)
