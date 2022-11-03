@@ -1,3 +1,8 @@
+# <span style="color:#0C0200; background-color:#852D1A">DEPCRECATION NOTICE</span>
+
+<p style="color: #1C1A02;background-color:#F3EB89">This is to bring to your notice that v4.x.x of the loopback4-s3 is deprecated and only supported for existing users. We will stop support for the same after December 2022 and no updates will happen after that. We strongly recommend to migrate to v6.x.x and above.
+Follow <a href="https://github.com/sourcefuse/loopback4-s3/blob/master/README.md#migration-to-a-version-after-400">this</a> to check the migration steps.</p>
+
 # loopback4-s3
 
 [![LoopBack](<https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png>)](http://loopback.io/)
