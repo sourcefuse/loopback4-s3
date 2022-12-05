@@ -45,18 +45,18 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.58.0",
-    "@aws-sdk/s3-request-presigner": "^3.58.0",
-    "@aws-sdk/smithy-client": "^3.99.0",
-    "@aws-sdk/types": "^3.78.0",
+    "@aws-sdk/client-s3": "^3.223.0",
+    "@aws-sdk/s3-request-presigner": "^3.223.0",
+    "@aws-sdk/smithy-client": "^3.222.0",
+    "@aws-sdk/types": "^3.222.0",
     "@loopback/boot": "^5.0.5",
     "@loopback/context": "^5.0.5",
     "@loopback/core": "^4.0.5",
-    "moment-timezone": "^0.5.34"
+    "moment-timezone": "^0.5.39"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
     "@loopback/build": "^9.0.5",
     "@loopback/eslint-config": "^13.0.5",
     "@loopback/rest": "^12.0.5",
@@ -82,7 +82,7 @@
     "eslint-plugin-eslint-plugin": "^5.0.6",
     "eslint-plugin-mocha": "^10.1.0",
     "fs-extra": "^10.1.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.2",
     "nyc": "^15.1.0",
     "semantic-release": "^19.0.3",
     "source-map-support": "^0.5.21",
