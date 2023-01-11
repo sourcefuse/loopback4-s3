@@ -1,3 +1,30 @@
+## Release [v6.1.0](https://github.com/sourcefuse/loopback4-s3/compare/v6.0.6..v6.1.0) January 11, 2023
+Welcome to the January 11, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/-100) :- [fix(deps): remove vulnerabilities ](https://github.com/sourcefuse/loopback4-s3/commit/bd44e3efbda7ef7764833898f747362b6857a8b8) was commited on January 11, 2023 by [Surbhi Sharma](mailto:98279679+Surbhi-sharma1@users.noreply.github.com)
+    
+      - added overrides to remove vulnerabilities
+      
+      -  GH-100
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/-98) :- [feat(chore): generate detailed and informative changelog ](https://github.com/sourcefuse/loopback4-s3/commit/2f8c6997bf914bb8862f77da40088a39d034975f) was commited on January 10, 2023 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - Using Customizable npm package to generate changelog
+      
+      -  GH-98
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/-96) :- [chore(deps): loopback version updates ](https://github.com/sourcefuse/loopback4-s3/commit/16e7a8a3f67875c553317c39ff4ce7f6bc9c9797) was commited on January 10, 2023 by [Surbhi Sharma](mailto:98279679+Surbhi-sharma1@users.noreply.github.com)
+    
+      - Updated version of the lb4 dependencies to the latest
+      
+      -  GH-96
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## [6.0.6](https://github.com/sourcefuse/loopback4-s3/compare/v6.0.5...v6.0.6) (2022-12-05)
 
 ## [6.0.5](https://github.com/sourcefuse/loopback4-s3/compare/v6.0.4...v6.0.5) (2022-12-05)
