@@ -10,7 +10,7 @@
   "engines": {
     "node": ">=8.9"
   },
-  "deprecated": "This version is deprecated. Please refer the migration docs to upgrade to the latest version.",
+  "deprecated": "This version is deprecated. Please refer the migration documents to upgrade to the latest version.",
   "scripts": {
     "build": "npm run clean && lb-tsc",
     "build:watch": "lb-tsc --watch",
@@ -105,7 +105,7 @@
           "releaseRules": [
             {
               "type": "chore",
-              "scope": "chore",
+              "scope": "deps",
               "release": "patch"
             }
           ]
