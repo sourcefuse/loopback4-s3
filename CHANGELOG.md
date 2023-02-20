@@ -1,3 +1,23 @@
+## Release [v6.1.1](https://github.com/sourcefuse/loopback4-s3/compare/v6.1.0..v6.1.1) February 20, 2023
+Welcome to the February 20, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [Correct the changelog Format](https://github.com/sourcefuse/loopback4-s3/issues/111) :- [fix(chore): correct the changelog format ](https://github.com/sourcefuse/loopback4-s3/commit/13a3e0b919206480379b994315e2a4a4206749b2) was commited on February 20, 2023 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - now issue description will be visible
+      
+      -  GH-111
+      
+  
+  - [Package Update - loopback4-s3](https://github.com/sourcefuse/loopback4-s3/issues/107) :- [fix(chore): remove all current vilnenrability of loopback4-notifications ](https://github.com/sourcefuse/loopback4-s3/commit/b62d089a46d33922a7e0be331576f269eda6a656) was commited on February 20, 2023 by [Sunny Tyagi](mailto:107617248+Tyagi-Sunny@users.noreply.github.com)
+    
+      - remove all current vilnenrability of loopback4-notifications
+      
+      -  GH-107
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v6.1.0](https://github.com/sourcefuse/loopback4-s3/compare/v6.0.6..v6.1.0) January 11, 2023
 Welcome to the January 11, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
