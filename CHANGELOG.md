@@ -1,3 +1,30 @@
+## Release [v6.1.2](https://github.com/sourcefuse/loopback4-s3/compare/v6.1.1..v6.1.2) March 13, 2023
+Welcome to the March 13, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [reverting the breaking change by version update](https://github.com/sourcefuse/loopback4-s3/issues/118) :- [chore(deps): reverting the breaking change by version update ](https://github.com/sourcefuse/loopback4-s3/commit/908cc29520bbcb448a90cacdcca6c5dd41dc7009) was commited on March 13, 2023 by [Gautam Agarwal](mailto:108651274+gautam23-sf@users.noreply.github.com)
+    
+      - reverting the breaking change by version update
+      
+      -  GH-118
+      
+  
+  - [loopback version update](https://github.com/sourcefuse/loopback4-s3/issues/116) :- [chore(deps): loopback version update ](https://github.com/sourcefuse/loopback4-s3/commit/9947bfa7415cec14760d372bbf10a911374a4686) was commited on March 13, 2023 by [Gautam Agarwal](mailto:108651274+gautam23-sf@users.noreply.github.com)
+    
+      - loopback version update
+      
+      -  GH-116
+      
+  
+  - [Stale Bot missing in the repository](https://github.com/sourcefuse/loopback4-s3/issues/114) :- [chore(chore): add github stale bot ](https://github.com/sourcefuse/loopback4-s3/commit/ddbc2a256c3cba4e2fcb68b40cf8677cc6a551af) was commited on February 27, 2023 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - Added stale.yml file to configure stale options
+      
+      -  GH-114
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v6.1.1](https://github.com/sourcefuse/loopback4-s3/compare/v6.1.0..v6.1.1) February 20, 2023
 Welcome to the February 20, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
