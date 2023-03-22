@@ -24,7 +24,7 @@ export class S3WithSigner extends S3 {
       InputType,
       OutputType,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      any,
+      any, //NOSONAR
       ServiceInputTypes,
       MetadataBearer
     >,
