@@ -1,3 +1,23 @@
+## Release [v6.1.3](https://github.com/sourcefuse/loopback4-s3/compare/v6.1.2..v6.1.3) April 24, 2023
+Welcome to the April 24, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [Loopback version update](https://github.com/sourcefuse/loopback4-s3/issues/125) :- [chore(deps): loopback version update ](https://github.com/sourcefuse/loopback4-s3/commit/00659c10b5a96ad04612e96e06157a16a071e927) was commited on April 24, 2023 by [RaghavaroraSF](mailto:97958393+RaghavaroraSF@users.noreply.github.com)
+    
+      - loopback version update
+      
+      -  GH-125
+      
+  
+  - [Fix Sonar Quality Gate](https://github.com/sourcefuse/loopback4-s3/issues/110) :- [fix(chore): fixing sonar smells ](https://github.com/sourcefuse/loopback4-s3/commit/9e904b59b9beaf54ecee1d0b0cb9329d00b3abc3) was commited on April 19, 2023 by [arpit1503khanna](mailto:108673359+arpit1503khanna@users.noreply.github.com)
+    
+      - resolving sonar smells to improve quality gate
+      
+      -  GH-110
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v6.1.2](https://github.com/sourcefuse/loopback4-s3/compare/v6.1.1..v6.1.2) March 13, 2023
 Welcome to the March 13, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
