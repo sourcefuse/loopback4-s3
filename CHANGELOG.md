@@ -1,3 +1,34 @@
+## Release [v7.0.0](https://github.com/sourcefuse/loopback4-s3/compare/v6.1.3..v7.0.0) June 7, 2023
+Welcome to the June 7, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [Loopback version update](https://github.com/sourcefuse/loopback4-s3/issues/125) :- [chore(deps): loopback version update ](https://github.com/sourcefuse/loopback4-s3/commit/e8262c636adaff0f2b5da08f69fd76bf64836b6a) was commited on June 1, 2023 by [RaghavaroraSF](mailto:97958393+RaghavaroraSF@users.noreply.github.com)
+    
+      - loopback version update
+      
+      -  GH-125
+      
+  
+  - [Remove support for node v14](https://github.com/sourcefuse/loopback4-s3/issues/129) :- [feat(chore): remove support for node v14,v12,v10 ](https://github.com/sourcefuse/loopback4-s3/commit/0ddbf874bc2966c9f1be3ad0c3afa2319ef9b5fa) was commited on May 11, 2023 by [RaghavaroraSF](mailto:97958393+RaghavaroraSF@users.noreply.github.com)
+    
+      - Version 14, v12, v10 of Nodejs reached its end of life
+      
+      -  BREAKING CHANGE:
+      
+      - End of life of node v14, node v12 and node v10
+      
+      -  GH-129
+      
+  
+  - [License  and Copyright Headers’ Year Upgradation](https://github.com/sourcefuse/loopback4-s3/issues/127) :- [chore(maintenance): update license and copyright headers ](https://github.com/sourcefuse/loopback4-s3/commit/ae994f62aaa476651fb559cb462fbf945c0487a8) was commited on May 4, 2023 by [RaghavaroraSF](mailto:97958393+RaghavaroraSF@users.noreply.github.com)
+    
+      - to reflect the year change
+      
+      -  GH-127
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v6.1.3](https://github.com/sourcefuse/loopback4-s3/compare/v6.1.2..v6.1.3) April 24, 2023
 Welcome to the April 24, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
