@@ -1,6 +1,27 @@
-# loopback4-s3
+<a href="https://sourcefuse.github.io/arc-docs/arc-api-docs" target="_blank"><img src="https://github.com/sourcefuse/loopback4-microservice-catalog/blob/master/docs/assets/logo-dark-bg.png?raw=true" alt="ARC By SourceFuse logo" title="ARC By SourceFuse" align="right" width="150" /></a>
 
-[![LoopBack](<https://github.com/strongloop/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png>)](http://loopback.io/)
+# [loopback4-s3](https://github.com/sourcefuse/loopback4-s3)
+
+<p align="left">
+<a href="https://www.npmjs.com/package/loopback4-s3">
+<img src="https://img.shields.io/npm/v/loopback4-s3.svg" alt="npm version" />
+</a>
+<a href="https://github.com/sourcefuse/loopback4-s3/graphs/contributors" target="_blank">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/sourcefuse/loopback4-s3">
+</a>
+<a href="https://www.npmjs.com/package/loopback4-s3" target="_blank">
+<img alt="downloads" src="https://img.shields.io/npm/dw/loopback4-s3.svg">
+</a>
+<a href="https://github.com/sourcefuse/loopback4-s3/blob/master/LICENSE">
+<img src="https://img.shields.io/github/license/sourcefuse/loopback4-s3.svg" alt="License" />
+</a>
+<a href="https://loopback.io/" target="_blank">
+<img alt="Powered By LoopBack 4" src="https://img.shields.io/badge/Powered%20by-LoopBack 4-brightgreen" />
+</a>
+</p>
+
+
+## Overview
 
 A simple loopback-next extension for AWS S3 integration in loopback applications.
 
