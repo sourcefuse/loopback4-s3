@@ -1,3 +1,30 @@
+## Release [v7.0.1](https://github.com/sourcefuse/loopback4-s3/compare/v7.0.0..v7.0.1) July 14, 2023
+Welcome to the July 14, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [Add ARC Branding in README](https://github.com/sourcefuse/loopback4-s3/issues/141) :- [docs(chore): add arc branding ](https://github.com/sourcefuse/loopback4-s3/commit/6c3f299a3c002fa4bc4268b0749e854053e3f3bc) was commited on July 14, 2023 by [Surbhi](mailto:98279679+Surbhi-sharma1@users.noreply.github.com)
+    
+      - add arc branding
+      
+      -  GH-141
+      
+  
+  - [Loopback version update](https://github.com/sourcefuse/loopback4-s3/issues/125) :- [chore(deps): update loopback versions ](https://github.com/sourcefuse/loopback4-s3/commit/09fafed65f2851b195e47b8a567f25f24e7a7456) was commited on July 14, 2023 by [Shubham P](mailto:shubham.prajapat@sourcefuse.com)
+    
+      - `@loopback/core@5.1.0`
+      
+      -  GH-125
+      
+  
+  - [Remove &lt;code&gt;/dist&lt;/code&gt; from git](https://github.com/sourcefuse/loopback4-s3/issues/138) :- [refactor(chore): remove dist ](https://github.com/sourcefuse/loopback4-s3/commit/b48c16013310f7cd1035a29ac8cff44eeabf8033) was commited on July 11, 2023 by [Shubham P](mailto:shubham.prajapat@sourcefuse.com)
+    
+      - it&#39;s a build folder that doesn&#39;t need to be tracked
+      
+      -  GH-138
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v7.0.0](https://github.com/sourcefuse/loopback4-s3/compare/v6.1.3..v7.0.0) June 7, 2023
 Welcome to the June 7, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
