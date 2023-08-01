@@ -8,7 +8,6 @@ metadata:
   description: LoopBack 4 extension for AWS S3 Integration.
   tags:
     - aws-s3
-    - cloud storage
     - loopback
     - extension
   links:
