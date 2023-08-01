@@ -14,8 +14,10 @@ metadata:
   links:
     - url: https://www.npmjs.com/package/loopback4-s3
       title: NPM Package
-    - url: https://developer.hashicorp.com/vault/api-docs/libraries#node-js
-      title: HashiCorp Vault Documentation
+    - url: https://docs.aws.amazon.com/s3/index.html
+      title: AWS S3 Docs
+    - url: https://loopback.io/doc/en/lb4/Extending-LoopBack-4.html#overview
+      title: Extending LoopBack
 spec:
   type: component
   lifecycle: production
