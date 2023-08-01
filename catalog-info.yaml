@@ -4,7 +4,19 @@ metadata:
   name: loopback4-s3
   annotations:
     github.com/project-slug: sourcefuse/loopback4-s3
+  namespace: arc
+  description: LoopBack 4 extension for AWS S3 Integration.
+  tags:
+    - aws-s3
+    - cloud storage
+    - loopback
+    - extension
+  links:
+    - url: https://www.npmjs.com/package/loopback4-s3
+      title: NPM Package
+    - url: https://developer.hashicorp.com/vault/api-docs/libraries#node-js
+      title: HashiCorp Vault Documentation
 spec:
-  type: other
-  lifecycle: unknown
+  type: component
+  lifecycle: production
   owner: sourcefuse
