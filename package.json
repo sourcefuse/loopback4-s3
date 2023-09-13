@@ -48,7 +48,7 @@
     "@aws-sdk/client-s3": "^3.229.0",
     "@aws-sdk/s3-request-presigner": "^3.229.0",
     "@aws-sdk/smithy-client": "^3.226.0",
-    "@aws-sdk/types": "^3.226.0",
+    "@aws-sdk/types": "^3.391.0",
     "@loopback/boot": "^6.1.0",
     "@loopback/context": "^6.1.0",
     "@loopback/core": "^5.1.0",
