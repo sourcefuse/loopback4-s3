@@ -45,7 +45,7 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.395.0",
+    "@aws-sdk/client-s3": "^3.456.0",
     "@aws-sdk/s3-request-presigner": "^3.397.0",
     "@aws-sdk/smithy-client": "^3.370.0",
     "@aws-sdk/types": "^3.391.0",
