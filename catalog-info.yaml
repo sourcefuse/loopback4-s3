@@ -4,6 +4,7 @@ metadata:
   name: loopback4-s3
   annotations:
     github.com/project-slug: sourcefuse/loopback4-s3
+    backstage.io/techdocs-ref: dir:.
   namespace: arc
   description: LoopBack 4 extension for AWS S3 Integration.
   tags:

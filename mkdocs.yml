@@ -1,0 +1,5 @@
+site_name: loopback4-s3
+site_description: loopback4-s3
+
+plugins:
+  - techdocs-core
