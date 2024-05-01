@@ -49,7 +49,7 @@
     "@aws-sdk/s3-request-presigner": "^3.509.0",
     "@smithy/smithy-client": "^2.3.0",
     "@aws-sdk/types": "^3.489.0",
-    "@loopback/boot": "^7.0.0",
+    "@loopback/boot": "^7.0.1",
     "@loopback/context": "^7.0.0",
     "@loopback/core": "^6.0.0",
     "moment-timezone": "^0.5.40"
