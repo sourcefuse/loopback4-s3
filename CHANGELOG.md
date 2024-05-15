@@ -1,3 +1,26 @@
+## Release [v9.0.1](https://github.com/sourcefuse/loopback4-s3/compare/v9.0.0..v9.0.1) May 15, 2024
+Welcome to the May 15, 2024 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [Generate Changelog](https://github.com/sourcefuse/loopback4-s3/issues/191) :- [fix(ci-cd): step to generate changelog ](https://github.com/sourcefuse/loopback4-s3/commit/012b5fb9d22f84b954eb8de88c92b6117cf8102e) was commited on May 15, 2024 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - add the ci workflow for pr
+      
+      -  GH-191
+      
+  
+  - [copy the Readme to root as well](https://github.com/sourcefuse/loopback4-s3/issues/189) :- [docs(chore): copy the Readme to root as well ](https://github.com/sourcefuse/loopback4-s3/commit/bc585a7389585799f0ade018ffb074592ce2b4ed) was commited on May 13, 2024 by [arpit1503khanna](mailto:108673359+arpit1503khanna@users.noreply.github.com)
+    
+      - copy the Readme to root as well
+      
+      -  GH-189
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/) :- [chore(core): update the readme path in sync docs workflow ](https://github.com/sourcefuse/loopback4-s3/commit/0a54ea4bdc3b3cfa2522b58fc6abc26f57f905bb) was commited on March 13, 2024 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v7.0.1](https://github.com/sourcefuse/loopback4-s3/compare/v7.0.0..v7.0.1) July 14, 2023
 Welcome to the July 14, 2023 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
