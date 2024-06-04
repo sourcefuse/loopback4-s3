@@ -1,3 +1,16 @@
+## Release [v9.0.2](https://github.com/sourcefuse/loopback4-s3/compare/v9.0.1..v9.0.2) June 4, 2024
+Welcome to the June 4, 2024 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [loopback version updates](https://github.com/sourcefuse/loopback4-s3/issues/193) :- [chore(deps): loopback version updates ](https://github.com/sourcefuse/loopback4-s3/commit/8961f1d7e060d171a6f37c839b57fba4f437310a) was commited on June 4, 2024 by [Surbhi](mailto:98279679+Surbhi-sharma1@users.noreply.github.com)
+    
+      - loopback version updates
+      
+      -  GH-193
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v9.0.1](https://github.com/sourcefuse/loopback4-s3/compare/v9.0.0..v9.0.1) May 15, 2024
 Welcome to the May 15, 2024 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
