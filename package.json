@@ -46,12 +46,12 @@
   ],
   "dependencies": {
     "@aws-sdk/client-s3": "^3.588.0",
-    "@aws-sdk/s3-request-presigner": "^3.588.0",
-    "@smithy/smithy-client": "^3.1.1",
-    "@aws-sdk/types": "^3.577.0",
-    "@loopback/boot": "^7.0.2",
-    "@loopback/context": "^7.0.2",
-    "@loopback/core": "^6.0.2",
+    "@aws-sdk/s3-request-presigner": "^3.633.0",
+    "@smithy/smithy-client": "^3.2.0",
+    "@aws-sdk/types": "^3.609.0",
+    "@loopback/boot": "^7.0.5",
+    "@loopback/context": "^7.0.5",
+    "@loopback/core": "^6.1.2",
     "moment-timezone": "^0.5.40"
   },
   "devDependencies": {
