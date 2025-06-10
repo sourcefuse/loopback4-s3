@@ -50,7 +50,7 @@
     "@smithy/smithy-client": "^3.4.2",
     "@aws-sdk/types": "^3.679.0 ",
     "@loopback/boot": "^7.0.9",
-    "@loopback/context": "^7.0.9",
+    "@loopback/context": "^7.0.14",
     "@loopback/core": "^6.1.6",
     "moment-timezone": "^0.5.40"
   },
