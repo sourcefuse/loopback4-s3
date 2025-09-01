@@ -8,7 +8,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "build": "npm run clean && lb-tsc",
@@ -45,23 +45,24 @@
     "!*/__tests__"
   ],
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.657.0",
-    "@aws-sdk/s3-request-presigner": "^3.685.0",
-    "@smithy/smithy-client": "^3.4.2",
-    "@aws-sdk/types": "^3.679.0 ",
-    "@loopback/boot": "^7.0.9",
-    "@loopback/context": "^7.0.9",
-    "@loopback/core": "^6.1.6",
+    "@aws-sdk/client-s3": "^3.879.0",
+    "@aws-sdk/s3-request-presigner": "^3.879.0",
+    "@aws-sdk/types": "^3.862.0",
+    "@loopback/boot": "^8.0.4",
+    "@loopback/context": "^8.0.3",
+    "@loopback/core": "^7.0.3",
+    "@smithy/smithy-client": "^4.5.0",
+    "@smithy/types": "^4.3.2",
     "moment-timezone": "^0.5.40"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
-    "@loopback/build": "^11.0.8",
-    "@loopback/eslint-config": "^15.0.4",
-    "@loopback/rest": "^14.0.9",
-    "@loopback/rest-explorer": "^7.0.9",
-    "@loopback/testlab": "^7.0.8",
+    "@loopback/build": "^12.0.3",
+    "@loopback/eslint-config": "^16.0.1",
+    "@loopback/rest": "^15.0.4",
+    "@loopback/rest-explorer": "^8.0.4",
+    "@loopback/testlab": "^8.0.3",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
