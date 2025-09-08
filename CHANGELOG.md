@@ -1,3 +1,20 @@
+## Release [v10.0.0](https://github.com/sourcefuse/loopback4-s3/compare/v9.0.3..v10.0.0) September 8, 2025
+Welcome to the September 8, 2025 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/) :- [refactor(chore): node and loopback packages version upgrade ](https://github.com/sourcefuse/loopback4-s3/commit/537fb94a5e2d0e32991582234af6f4866652c583) was commited on September 8, 2025 by [Vaibhav Bhalla](mailto:vaibhav.bhalla@sourcefuse.com)
+    
+      - node and loopback packages version upgrade
+      
+      - BREAKING CHANGE: yes
+      
+      - GH-239
+      
+      - Co-authored-by: Vaibhav  Bhalla &lt;vaibhav.bhalla@SFSupports-MacBook-Air.local&gt;
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v9.0.3](https://github.com/sourcefuse/loopback4-s3/compare/v9.0.2..v9.0.3) December 18, 2024
 Welcome to the December 18, 2024 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
