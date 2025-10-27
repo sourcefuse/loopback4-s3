@@ -66,7 +66,8 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/github": "^12.0.0",
+    "@semantic-release/npm": "^13.1.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/dotenv": "^8.2.0",
     "@types/moment-timezone": "^0.5.30",
@@ -87,7 +88,7 @@
     "husky": "^8.0.2",
     "jsdom": "^21.0.0",
     "nyc": "^17.1.0",
-    "semantic-release": "^19.0.3",
+    "semantic-release": "^25.0.1",
     "simple-git": "^3.15.1",
     "source-map-support": "^0.5.21",
     "typescript": "~5.2.2"
@@ -108,9 +109,6 @@
       "finalhandler": "^1.2.0",
       "send": "^0.18.0",
       "serve-static": "^1.15.0"
-    },
-    "@semantic-release/npm": {
-      "npm": "^9.4.2"
     },
     "@aws-sdk/smithy-client": {
       "@smithy/types": "^2.3.3"
@@ -140,7 +138,14 @@
         }
       ],
       "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": true,
+          "pkgRoot": ".",
+          "tarballDir": "dist"
+        }
+      ],
       [
         "@semantic-release/git",
         {
@@ -153,6 +158,6 @@
       ],
       "@semantic-release/github"
     ],
-    "repositoryUrl": "git@github.com:sourcefuse/loopback4-s3.git"
+    "repositoryUrl": "https://github.com/sourcefuse/loopback4-s3.git"
   }
 }
