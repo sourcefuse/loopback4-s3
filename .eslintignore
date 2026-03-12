@@ -1,7 +1,7 @@
 node_modules/
 dist/
 coverage/
-
+scripts/
 .eslintrc.js
 index.*
 commitlint.config.js

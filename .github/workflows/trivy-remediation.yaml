@@ -1,0 +1,74 @@
+name: Trivy Security Remediation
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  CONFIG_USERNAME: ${{ vars.GIT_COMMIT_USERNAME }}
+  CONFIG_EMAIL: ${{ vars.GIT_COMMIT_EMAIL }}
+
+jobs:
+  security-remediation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+          persist-credentials: true
+          token: ${{ secrets.RELEASE_COMMIT_GH_PAT }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "$CONFIG_USERNAME"
+          git config --global user.email "$CONFIG_EMAIL"
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Install Trivy
+        uses: aquasecurity/setup-trivy@v0.2.0
+
+      - name: Run remediation workflow
+        run: bash scripts/trivy-remediation.sh
+
+      - name: Stage dependency changes
+        run: |
+          git add package.json package-lock.json || true
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if ! git diff --cached --quiet; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.RELEASE_COMMIT_GH_PAT }}
+          branch: security/trivy-remediation
+          base: master
+          delete-branch: true
+          add-paths: |
+            package.json
+            package-lock.json
+          commit-message: 'fix(security): automated Trivy remediation'
+          title: 'fix(security): Automated Trivy vulnerability remediation'
+          body: Automated fix for HIGH and CRITICAL vulnerabilities detected by Trivy.
