@@ -1,3 +1,42 @@
+## Release [v10.1.0](https://github.com/sourcefuse/loopback4-s3/compare/v10.0.0..v10.1.0) April 21, 2026
+Welcome to the April 21, 2026 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/) :- [chore(deps): upgraded to latest dependencies ](https://github.com/sourcefuse/loopback4-s3/commit/14591dc38f6ead259a1ffef583ca60f452a1c162) was commited on April 21, 2026 by [Sourav](mailto:sourav.kashyap@sourcefuse.com)
+    
+      - * chore(deps): upgraded to latest dependencies
+      
+      - * chore(deps): upgraded to latest dependencies, comment resolved
+      
+      - * chore(deps): resolving package release issues
+      
+      - resolving package release issues
+      
+      - GH-262
+      
+      - ---------
+      
+      - Co-authored-by: Vinay Gupta &lt;vinay.gupta@sourcefuse.com&gt;
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/243) :- [chore(ci-cd): trusted oidc publisher ](https://github.com/sourcefuse/loopback4-s3/commit/b8ad2621c0862bdcad8407f4c32ca4ddd058a7eb) was commited on October 27, 2025 by [yeshamavani](mailto:83634146+yeshamavani@users.noreply.github.com)
+    
+      - update workflow and package json
+      
+      - GH-243
+      
+  
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/) :- [feat(ci-cd): add trivy scan ](https://github.com/sourcefuse/loopback4-s3/commit/4da4b0b93cd3547fba4538680c1ab4b5569b0079) was commited on October 27, 2025 by [Vaibhav Bhalla](mailto:vaibhav.bhalla@sourcefuse.com)
+    
+      - add trivy scan instead of synk
+      
+      - GH-241
+      
+      - Co-authored-by: Vaibhav  Bhalla &lt;vaibhav.bhalla@SFSupports-MacBook-Air.local&gt;
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v10.0.0](https://github.com/sourcefuse/loopback4-s3/compare/v9.0.3..v10.0.0) September 8, 2025
 Welcome to the September 8, 2025 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
