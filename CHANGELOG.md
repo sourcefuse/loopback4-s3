@@ -1,3 +1,18 @@
+## Release [v11.0.0](https://github.com/sourcefuse/loopback4-s3/compare/v10.1.0..v11.0.0) June 16, 2026
+Welcome to the June 16, 2026 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
+
+  - [](https://github.com/sourcefuse/loopback4-s3/issues/274) :- [refactor(chore): remove Node js 20 support ](https://github.com/sourcefuse/loopback4-s3/commit/ec3b1d61c04ad03f188c239da85a22993efe8529) was commited on June 16, 2026 by [Sourav](mailto:sourav.kashyap@sourcefuse.com)
+    
+      - remove Node js 20 support
+      
+      - BREAKING CHANGE: yes
+      
+      - GH-274
+      
+  
+Clink on the above links to understand the changes in detail.
+  ___
+
 ## Release [v10.1.0](https://github.com/sourcefuse/loopback4-s3/compare/v10.0.0..v10.1.0) April 21, 2026
 Welcome to the April 21, 2026 release of loopback4-s3. There are many updates in this version that we hope you will like, the key highlights include:
 
