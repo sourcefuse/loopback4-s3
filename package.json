@@ -89,7 +89,7 @@
     "jsdom": "^21.1.2",
     "nyc": "^17.1.0",
     "semantic-release": "^25.0.3",
-    "simple-git": "^3.36.0",
+    "simple-git": "^4.0.1",
     "source-map-support": "^0.5.21",
     "typescript": "~5.9.3"
   },
